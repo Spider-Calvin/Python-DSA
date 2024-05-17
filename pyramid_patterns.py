@@ -57,7 +57,7 @@ class Patterns:
     
     def pattern5(self):
         n =  self.number
-        print('pattern 5')
+        print('pattern 6')
 
         for i in range((2*n)+1):
             if i < n:
@@ -70,6 +70,23 @@ class Patterns:
                     print(end=' ')
                 for j in range((2*n)-(i+1)):
                     print("*", end='')
+            print()
+        print()
+
+    def pattern6(self):
+        n =  self.number
+        print('pattern 5')
+
+        for i in range(n):
+            i+=1
+            for j in range(i):
+                    j+=1
+                    print(j,end='')
+            for j in range(2*n-2*i):
+                    print(end=' ')
+            for j in range(i):
+                    j+=1
+                    print(j,end='')
             print()
         print()
 
@@ -86,4 +103,4 @@ Pattern_instance.pattern4()
 
 Pattern_instance.pattern5()
 
-# Pattern_instance.pattern6()
+Pattern_instance.pattern6()
