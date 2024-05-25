@@ -64,14 +64,14 @@ class Patterns:
 
 Pattern_instance = Patterns(6)
 
-# Pattern_instance.pattern1()
+Pattern_instance.pattern1()
 
-# Pattern_instance.pattern2()
+Pattern_instance.pattern2()
 
-# Pattern_instance.pattern3()
+Pattern_instance.pattern3()
 
-# Pattern_instance.pattern4()
+Pattern_instance.pattern4()
 
 Pattern_instance.pattern5()
 
-# Pattern_instance.pattern6()
+Pattern_instance.pattern6()

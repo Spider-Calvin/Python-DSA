@@ -1,7 +1,1 @@
-pattern 5
-F
-EF
-DEF
-CDEF
-BCDEF
-ABCDEF
+5 hello my lovely lady
