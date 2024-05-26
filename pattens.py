@@ -212,8 +212,89 @@ class Patterns:
     def pattern19(self):
         n=self.number
 
+        for i in range(2*n):
+            if(i<n):
+                for x in range(n-i):
+                    print(x+1,end='')
+
+                for x in range(2*i):
+                    print(end=' ')
+                
+                for x in range(n-i,0,-1):
+                    print(x, end='')
+            else:
+                k=i-n+1
+                for x in range(k):
+                    print(x+1,end='')
+
+                for x in range(2*n-2*k):
+                    print(end=' ')
+                
+                for x in range(k):
+                    print(x+1,end='')
+            print()
+
+    def pattern20(self):
+        n=self.number
+
+        for i in range(2*n-1):
+            if(i<n):
+                for j in range(i+1):
+                    print('*', end='')
+                for j in range(2*n-2*(i+1)):
+                    print(end=' ')
+                for j in range(i+1):
+                    print('*', end='')
+                print()
+            else:
+                k=i-n+1
+                for j in range(n-k):
+                    print('*',end='')
+                for j in range(2*k):
+                    print(end=' ')
+                for j in range(n-k):
+                    print('*',end='')
+                print()
+
+    def pattern21(self):
+        n=self.number
+        for i in range(n):
+            for j in range(n):
+                if(i==0 or j==0 or i==n-1 or j==n-1 ):
+                    print('*', end='')
+                else:
+                    print(' ', end='')
+            print('')
+
+    def pattern22(self):
+        n=self.number
+
+        for i in range(2*n-1):
+            for j in range(2*n-1):
+                a=i
+                b=j
+                c=(2*n)-2-i
+                d=(2*n)-2-j
+                x = min(min(a, b), min(c, d))
+                print(x, end=' ')
+            print()
+
+    def pattern22(self):
+        n=self.number
+
+        for i in range(2*n-1):
+            for j in range(2*n-1):
+                a=i
+                b=j
+                c=(2*n)-i-2
+                d=(2*n)-j-2
+                x = min(min(a, b), min(c, d))
+                print(n-x, end=' ')
+            print()
+
 
 patternInstance = Patterns(5)
+
 
 # patternInstance.pattern1()
 # patternInstance.pattern2()
@@ -233,4 +314,7 @@ patternInstance = Patterns(5)
 # patternInstance.pattern16()
 # patternInstance.pattern17()
 # patternInstance.pattern18()
-patternInstance.pattern19()
+# patternInstance.pattern19()
+# patternInstance.pattern20()
+# patternInstance.pattern21()
+# patternInstance.pattern22()
